@@ -7,7 +7,9 @@ Link to our SWOT: [Click here](/SWOT.md)
 In order to contribute to this project:
 
 - Find an Issue you would like to focus on.
-- Create a new branch with the name: `[team name]-[person working on it]-[issue number]`
+- Create a new branch with the name: `[team number]-[person working on it]-[issue number]`
+- Your team number can be found [here](https://docs.google.com/document/d/1f9ZLMGJCS6-3FiUDJU-ifnQMtGt3XDVBmZI8NAr7wgM/edit?tab=t.0)
+  - Example branch name: team1-wwidjaja0-11
 - Push to this new branch and make a PR!
 
 ## Our Team
