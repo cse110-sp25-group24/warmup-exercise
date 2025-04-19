@@ -2,36 +2,59 @@
 
 Link to our SWOT: [Click here](/SWOT.md)
 
-CSE 110 exploratory programming to "derisk" potential problems in the final project.
+## How to Contribute
 
-In this assignment, we are going to perform some exploratory programming specifically so that we "derisk" potential problems in the final project.  We are doing a small warm-up exercise to code a playing card widget. You can work through these ideas in increasing order of complexity:
+In order to contribute to this project:
+- Find an Issue you would like to focus on.
+- Create a new branch with the name: `[team name]-[person working on it]-[issue number]`
+- Push to this new branch and make a PR!
 
-1. Card Deck and Playing Card Web Components complete with animation of flip and/or shuffle (HTML, CSS, and very light JS)
+## Our Team
 
-2. Dealing with the deck, complete with an ability to pull the cards one or multiple at a time and state management of the deck (more JS + some simple web APIs)
+We have four teams.
 
-3. A simple game, either Solitaire or Black Jack Game, against an algorithmic dealer.  No multiplayer effort here or network work allowed.  The dealer may have a brain-dead, random, and correct mode for fun.  If you do BlackJack you need state for money to be tracked.    (the most JS)
+- Team 1: Eric, Yilong, Chris
+- Team 2: Aruthan, TL, Vincent
+- Team 3: Noeh, Myat, Phiroze
+- Team 4: Alexis, Widjaja
 
-You may not jump steps. You have to be able to do #1 properly before #2, and so on.  Your card and deck widgets should use standard HTML, CSS, and JavaScript and should not use libraries or frameworks, as they aren't needed.  Components will be built using Web Components which are built-in to browsers.   State management can be handled via the localStorage API for now.   You must also use GitHub to do this.  We must see multiple pushes to your repository and some uses of issues to allocate work.
+## Planning
 
-The amount of polish and presentation in the warm-up is up to you; depending on how your efforts progress, you can make it much more visual with animations or even add in sounds or voice.  Most importantly, you should focus the most on code quality and other aspects of a well-engineered piece of code.  After your mini-sprint, you demonstrate your component(s) or app in a short video uploaded on YouTube (under 3 minutes), access to the working app for your TA mentor, and a SWOT analysis of your learnings from the exercise.
+Focusing on: #1 Card Deck and Playing Card Web Components complete with animation of flip and/or shuffle (HTML, CSS, and very light JS)
+- Deck in the middle
+- Upon the user “flipping a card” 
+  - Put the current card in front of the user (if not the first card in the deck) face down in the “discard pile”
+  - Pull the next card from the shuffled deck and “flip it over”
+- If the deck is empty, reshuffle automatically and put the deck back
+- If the user clicks a button to “Shuffle” it should flip all the cards into the discard pile, then start the shuffle process.
 
-The expected outcomes of this exercise are:
+### HTML
 
-1. Implementation of at least one of the steps. For this create a new repository in your Github Organization called warmup-exercise.
-    - NOTE: If you are attempting multiple widgets, keep them in separate folders in the repo mentioned above
-2. Review of the process followed by a SWOT analysis (Strength, Weakness, Opportunity, Threat) on how it went on the aspects team, tech, and tool and a brief summary of your learning.
+- Create a container for a card
+- Create placeholder cards (when deleting a placeholder, the next placeholder under it should pop up for example)
+  - https://rawgit.com/richardschneider/cardsJS/master/hello.html
+- Create a non-functional Shuffle button
+- Create a non-functional Draw button
+- Put this all together for overall game
+  - Create a container for the deck
+  - Create container for where the decks/shuffle button will go'
 
-For the submission on GRADESCOPE, you need to submit a pdf containing:
+### CSS
 
-- Team number
-- Team name
-- Github Repo Link
-- Youtube Link
-- Full SWOT analysis
+- Style the cards
+- Style the card backing
+- Style the buttons
+- Style the whole screen
 
-Also upload this PDF in your main GitHub repository in the directory admin/adr
+### JavaScript
 
-The top 5 teams in terms of code and analysis will receive some bonus points, and class recognition.
-
-NOTE: You may consider breaking your team into sub-teams or any other play style that makes sense for you to exercise your team and reveal how you work together.
+- Create a representation of cards
+- Create a representation of a deck or “stack” containing multiple cards
+- Implement shuffle logic
+  - If shuffle button is clicked, shuffle the deck
+  - If deck is empty and shuffle/flip button are clicked, shuffle the deck
+- To shuffle the deck
+  - put all the cards back in the “unflipped” deck data structure and shuffle them randomly
+- Add animations - js
+  - Flip
+  - Shuffle
