@@ -5,6 +5,7 @@ Link to our SWOT: [Click here](/SWOT.md)
 ## How to Contribute
 
 In order to contribute to this project:
+
 - Find an Issue you would like to focus on.
 - Create a new branch with the name: `[team name]-[person working on it]-[issue number]`
 - Push to this new branch and make a PR!
@@ -21,8 +22,9 @@ We have four teams.
 ## Planning
 
 Focusing on: #1 Card Deck and Playing Card Web Components complete with animation of flip and/or shuffle (HTML, CSS, and very light JS)
+
 - Deck in the middle
-- Upon the user “flipping a card” 
+- Upon the user “flipping a card”
   - Put the current card in front of the user (if not the first card in the deck) face down in the “discard pile”
   - Pull the next card from the shuffled deck and “flip it over”
 - If the deck is empty, reshuffle automatically and put the deck back
@@ -32,7 +34,7 @@ Focusing on: #1 Card Deck and Playing Card Web Components complete with animatio
 
 - Create a container for a card
 - Create placeholder cards (when deleting a placeholder, the next placeholder under it should pop up for example)
-  - https://rawgit.com/richardschneider/cardsJS/master/hello.html
+  - [https://rawgit.com/richardschneider/cardsJS/master/hello.html]
 - Create a non-functional Shuffle button
 - Create a non-functional Draw button
 - Put this all together for overall game
