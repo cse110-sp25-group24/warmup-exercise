@@ -4,24 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles.css" />
-    <script src="cards.js" type="text/javascript" /></script>
-    <title>TITLE HERE</title>
+    <script src="cards.js" type="text/javascript"></script>
+    <title>Card Game</title>
 </head>
-<body>
-    <main>
-        <!-- Create a place to put the deck and display the cards here -->
-        <section id="example-area">
-            <figure id="drawn-card-ex" class="card">
-                <img class='card' src='cards/KS.svg'>
-                <img src="assets/cards/KH.svg" alt="test placeholder">
-            </figure>
-        </section>
-    </main>
+    <body>
+        <main>
+            <header class ="title-name">
+                <h1>Welcome to Cards!</h1>
+            </header>
+            <!-- Create a place to put the deck and display the cards here -->
+            <section id="card-area">
+                <!-- Deck of Undrawn Cards -->
+                <div id="deck" class="card">
+                    <!--TODO: put back of card here(placeholder is here for now)-->
+                    <img src="assets/cards/BACK.svg" alt="Deck (back of card)">
+                </div>
+                <!-- Drawn Cards -->
+                <div id="drawn-card" class="card">
+                    <!--TODO: put front of card here(placeholder is here for now)-->
+                    <img id="card-image" src="assets/cards/KH.svg" alt="Drawn card">
+                </div>
+            </section>
 
-    <!-- Create the Shuffle button here -->
-    <button>Shuffle</button>
+            <!-- Buttons -->
+            <section id = "button-area">
+                <!-- Create the Shuffle button here -->
+                <button id="shuffle">Shuffle</button>
 
-    <!-- Create the Draw button here -->
-    <button>Draw</button>
-</body>
+                <!-- Create the Draw button here -->
+                <button id="draw">Draw</button>
+            </section>
+        </main>
+    </body>
 </html>
