@@ -9,25 +9,20 @@
 </head>
     <body>
         <main>
-            <header class ="title-name">
-                <h1>Welcome to Cards!</h1>
+            <header>
+                <h1> BeeZee 24/7 Deck Shuffling Simulator </h1>
             </header>
-            <!-- Create a place to put the deck and display the cards here -->
-            <section id="card-area">
-                <!-- Deck of Undrawn Cards -->
-                <div id="deck" class="card">
-                    <!--TODO: put back of card here(placeholder is here for now)-->
-                    <img src="assets/cards/BACK.svg" alt="Deck (back of card)">
-                </div>
-                <!-- Drawn Cards -->
-                <div id="drawn-card" class="card">
-                    <!--TODO: put front of card here(placeholder is here for now)-->
-                    <img id="card-image" src="assets/cards/KH.svg" alt="Drawn card">
+            <section>             
+                <div class="back-card"></div>
+
+                <div class="card-front">
+                    <p class="number-container">8</p>
+                    <p class="suit-container">suit</p>
                 </div>
             </section>
 
             <!-- Buttons -->
-            <section id = "button-area">
+            <section>
                 <!-- Create the Shuffle button here -->
                 <button id="shuffle">Shuffle</button>
 
