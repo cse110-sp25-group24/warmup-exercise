@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="cards.js" type="text/javascript"></script>
     <title>Card Game</title>
 </head>
@@ -12,17 +12,13 @@
             <header class ="title-name">
                 <h1>Welcome to Cards!</h1>
             </header>
-            <!-- Create a place to put the deck and display the cards here -->
-            <section id="card-area">
-                <!-- Deck of Undrawn Cards -->
-                <div id="deck" class="card">
-                    <!--TODO: put back of card here(placeholder is here for now)-->
-                    <img src="assets/cards/BACK.svg" alt="Deck (back of card)">
-                </div>
-                <!-- Drawn Cards -->
-                <div id="drawn-card" class="card">
-                    <!--TODO: put front of card here(placeholder is here for now)-->
-                    <img id="card-image" src="assets/cards/KH.svg" alt="Drawn card">
+
+            <section id = "card-structure">             
+                <div class="back-card"></div>
+
+                <div class="card-front">
+                    <div class="number-container">8</div>
+                    <div class="suit-container">suit</div>
                 </div>
             </section>
 
