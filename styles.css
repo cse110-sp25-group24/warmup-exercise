@@ -10,15 +10,28 @@
    
 }
 
-.card{
-
-
+.card-container{
+    display: flex;
+    
+      
+ 
+      
+}
+.back-card,
+.card-front{
+    width: 120px; 
+    margin: 30px;              
+    height: 180px;              
+    border: 2px solid black;    
+    border-radius: 10px;        
+    padding: 10px;              
+    box-sizing: border-box;    
 }
 
 .number-container{
-
+    
 }
 
 .suit-container{
-
+    
 }
