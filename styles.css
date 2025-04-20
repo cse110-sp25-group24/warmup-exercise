@@ -2,6 +2,20 @@
 /* Style the page below here */
 
 /* Style the buttons below here */
+#button-area{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+
+#shuffle, #draw{
+    height: 50px;
+    width: 120px;
+    background-color: #cfcaca;
+    font-size: 24px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
 
 /* Style the cards below here */
 
@@ -14,29 +28,34 @@
 .number-container {
     position: absolute;
     top: 8px;
-    left: 8px;
-    font-size: 32px;
+    left: 10px;
+    font-size: 100px;
     font-weight: bold;
-    color: #333;
+    color: #ae4040;
 }
 
 .suit-container {
     position:absolute;
     bottom: 8px;
-    right: 8px;
-    font-size: 28px;
-    color: #555;
+    right: 10px;
+    font-size: 80px;
+    color: #ae4040;
   }
 
 .back-card,
 .card-front{
-    width: 120px; 
+    width: 200px; 
     margin: 30px;              
-    height: 180px;              
+    height: 300px;              
     border: 2px solid black;    
     border-radius: 10px;        
     padding: 10px;              
     box-sizing: border-box;  
-    position: relative;  
+    position: relative; 
+    display: flex; 
+    box-shadow: 0 12px 24px rgba(0, 0, 0.2, 0.25);
 }
 
+.back-card{
+    background-color: #b83939; 
+}
