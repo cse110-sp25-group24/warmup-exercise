@@ -5,15 +5,12 @@
 
 /* Style the cards below here */
 
-.card {
-    width: 150px;
-    height:220px;
-    background-color: #fdfdfd; /* off-white */
-    border-radius: 10px;
-    border : 1px solid #ccc;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    position: relative;
+#card-structure{
+    display: flex;
+    justify-content: center;
+   
 }
+
 .number-container {
     position: absolute;
     top: 8px;
@@ -21,7 +18,8 @@
     font-size: 32px;
     font-weight: bold;
     color: #333;
-  }
+}
+
 .suit-container {
     position:absolute;
     bottom: 8px;
@@ -30,19 +28,6 @@
     color: #555;
   }
 
-#card-structure{
-    display: flex;
-    justify-content: center;
-   
-}
-
-.card-container{
-    display: flex;
-    
-      
- 
-      
-}
 .back-card,
 .card-front{
     width: 120px; 
@@ -51,6 +36,7 @@
     border: 2px solid black;    
     border-radius: 10px;        
     padding: 10px;              
-    box-sizing: border-box;    
+    box-sizing: border-box;  
+    position: relative;  
 }
 
