@@ -4,3 +4,27 @@
 /* Style the buttons below here */
 
 /* Style the cards below here */
+.card {
+    width: 150px;
+    height:220px;
+    background-color: #fdfdfd; /* off-white */
+    border-radius: 10px;
+    border : 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+.number-container {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+.suit-container {
+    position:absolute;
+    bottom: 8px;
+    right: 8px;
+    font-size: 28px;
+    color: #555;
+  }
