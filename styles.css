@@ -4,6 +4,7 @@
 /* Style the buttons below here */
 
 /* Style the cards below here */
+
 .card {
     width: 150px;
     height:220px;
@@ -28,3 +29,28 @@
     font-size: 28px;
     color: #555;
   }
+
+#card-structure{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.card-container{
+    display: flex;
+    
+      
+ 
+      
+}
+.back-card,
+.card-front{
+    width: 120px; 
+    margin: 30px;              
+    height: 180px;              
+    border: 2px solid black;    
+    border-radius: 10px;        
+    padding: 10px;              
+    box-sizing: border-box;    
+}
+
