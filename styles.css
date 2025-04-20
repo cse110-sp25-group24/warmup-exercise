@@ -1,61 +1,70 @@
 
 /* Style the page below here */
 
-/* Style the buttons below here */
-#button-area{
+section, header {
     display: flex;
     justify-content: center;
-    gap:15px;
 }
 
-#shuffle, #draw{
-    height: 50px;
-    width: 120px;
-    background-color: #cfcaca;
-    font-size: 24px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
+/* Style the buttons below here */
+
+
 
 /* Style the cards below here */
 
-#card-structure{
-    display: flex;
-    justify-content: center;
-   
+.back-card{
+    background-color: #b83939;
 }
-
-.number-container {
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    font-size: 100px;
-    font-weight: bold;
-    color: #ae4040;
-}
-
-.suit-container {
-    position:absolute;
-    bottom: 8px;
-    right: 10px;
-    font-size: 80px;
-    color: #ae4040;
-  }
 
 .back-card,
 .card-front{
-    width: 200px; 
-    margin: 30px;              
-    height: 300px;              
-    border: 2px solid black;    
-    border-radius: 10px;        
-    padding: 10px;              
-    box-sizing: border-box;  
-    position: relative; 
-    display: flex; 
-    box-shadow: 0 12px 24px rgba(0, 0, 0.2, 0.25);
+    width: 12rem;
+    min-width: 128px;
+    margin: 1rem;
+    height: 16rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 
-.back-card{
-    background-color: #b83939; 
+.card-front p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #ae4040;
+    position: relative;
+}
+
+.number-container {
+    font-size: 8rem;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 3rem;
+}
+
+.suit-container {
+    font-size: 5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+}
+
+@media (max-width: 480px) {
+    .back-card,
+    .card-front {
+        width: 8rem;
+        height: 12rem;
+    }
+
+    .number-container {
+        font-size: 6rem;
+        bottom: 0.2rem;
+        right: 1.5rem;
+    }
+
+    .suit-container {
+        font-size: 3rem;
+        bottom: 0.2rem;
+        left: 0.5rem;
+    }
 }
