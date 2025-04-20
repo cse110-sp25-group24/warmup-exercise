@@ -5,6 +5,14 @@ section, header {
     justify-content: center;
 }
 
+body{
+    background-image: url('images/leaves.jpg');
+    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/leaves.jpg'); */
+
+    background-position: center;
+    filter: brightness(100%);
+}
+
 /* Style the buttons below here */
 
 
