@@ -4,3 +4,21 @@
 /* Style the buttons below here */
 
 /* Style the cards below here */
+#card-structure{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.card{
+
+
+}
+
+.number-container{
+
+}
+
+.suit-container{
+
+}
