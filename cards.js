@@ -43,3 +43,33 @@ function shuffleDeck() {
 
 
 // Implement a functions to animate the cards here
+
+// Function to deal a card
+const suits = {
+  H: "♥",
+  D: "♦",
+  S: "♠",
+  C: "♣"
+};
+
+document.getElementById("draw").addEventListener("click", () => {
+  const cardName = drawCard(); // e.g., "8 of D"
+  const [value, , suitLetter] = cardName.split(" ");
+
+  const suits = {
+    H: "♥",
+    D: "♦",
+    S: "♠",
+    C: "♣"
+  };
+
+  const frontCard = document.querySelector(".card-front");
+  console.log("Front card: ", value, suitLetter);
+  // Update content
+  frontCard.querySelector(".number-container").textContent = value;
+  frontCard.querySelector(".suit-container").textContent = suits[suitLetter];
+
+  // Trigger animation
+});
+
+
