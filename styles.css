@@ -23,7 +23,52 @@ body {
 
 /* Style the buttons below here */
 
+.button-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.shuffle-draw-class {
+  /* General location/size characteristics */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 5rem;
+
+  /* Customizing the button properties here */
+  border-radius: 0.5rem;
+  box-shadow: 0.05rem 0.2rem 0rem rgb(83, 18, 18);
+}
+
+.shuffle-draw-class img {
+  flex: 1 1 auto;
+  max-width: 50%;
+  height: auto;
+}
+
+.shuffle-draw-class:hover {
+  cursor: pointer;
+  box-shadow: 0.1rem 0.4rem 0.2rem rgb(83, 18, 18);
+  transition: box-shadow 0.25s ease;
+}
+
+.shuffle-draw-class:active {
+  cursor: pointer;
+  box-shadow: 0rem 0rem 0rem rgb(83, 18, 18);
+  transition: box-shadow 0.01s ease;
+}
+
 /* Style the cards below here */
+
+.no-card {
+  background-color: #b83939;
+  background-size: cover;
+  background-position: center;  
+}
 
 .back-card {
   background-color: #b83939;
@@ -36,6 +81,7 @@ body {
   background-color: #ffffff;
 }
 
+.no-card,
 .back-card,
 .card-front {
   width: 12rem;
