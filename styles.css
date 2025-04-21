@@ -116,8 +116,8 @@ header {
 .suit-container {
   font-size: 9rem;
   position: absolute;
-  bottom: 2.5rem;
-  left: 2rem;
+  bottom: 3.5rem;
+  left: 1.5rem;
 }
 
 @media (max-width: 480px) {
