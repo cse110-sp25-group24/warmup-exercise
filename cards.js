@@ -30,14 +30,9 @@ function drawCard() {
   number.textContent = card[0] + card[1];
   suit.textContent = card[card.length - 1];
 
-  if (suit.textContent == "♥" || suit.textContent == "♦") {
-    number.style.color = "red";
-    suit.style.color = "red";
-  }
-  else {
-    number.style.color = "black";
-    suit.style.color = "black";
-  }
+  const randomColor = Math.random() < 0.5 ? "red" : "black";
+  number.style.color = randomColor;
+  suit.style.color = randomColor;
 
   return card;
 }
