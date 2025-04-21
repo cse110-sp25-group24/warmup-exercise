@@ -51,11 +51,14 @@ We successfully implemented Step 1 of the assignment: creating a styled card dec
 |-----------|------------|
 | GitHub Issues helped break down tasks clearly | Some teammates were new to branching and PRs |
 | Figma made the layout vision clear before coding | Not everyone used or referred to the Figma actively |
+| Clear team and contribution process written in the README |
 
 | Opportunities | Threats |
 |---------------|---------|
 | Assign Issues with clearer labels and deadlines | If PR reviews aren't enforced, code quality may suffer |
 | Sync GitHub board with standups to track progress live | Conflicts may arise if teammates commit directly to main |
+| We can reuse this structure (README + Slack + GitHub Issues) for future projects | Confusion or errors may occur if branch guidelines aren’t followed |
+| GitHub Projects or PR Templates could further improve organization | 
 
 ---
 
