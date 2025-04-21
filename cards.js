@@ -26,7 +26,7 @@ function drawCard() {
   }
 
   /* Functionality for showing what the top card is */
-  number.textContent = card[0];
+  number.textContent = card[0] + card[1];
   suit.textContent = card[card.length - 1];
 
   return card;
