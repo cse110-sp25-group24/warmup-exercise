@@ -113,22 +113,31 @@ header {
   position: relative;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two rows: one for the number, one for the suit */
+  grid-template-columns: 1fr; /* Single column */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 100%; /* Ensure it fills the card */
+}
 .number-container {
   font-size: calc(50px + 7vw);
   letter-spacing: -0.2em;
   position: relative;
   right: 2.5vw;
+  grid-row: 1; /* Place in the first row */
 }
-
 .suit-container {
   font-size: calc(50px + 5vw);
   height: auto;
   position: relative;
   bottom: 1vw;
   left: 1vw;
+  grid-row: 2; /* Place in the second row */
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1600px) {
   .no-card,
   .back-card,
   .card-front {
