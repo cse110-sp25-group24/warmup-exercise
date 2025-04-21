@@ -1,82 +1,84 @@
-
 /* Style the page below here */
-section, header {
-    display: flex;
-    justify-content: center;
+section,
+header {
+  display: flex;
+  justify-content: center;
 }
 
 body {
-    background: linear-gradient( rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.9) ), url('images/leaves.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+  background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.9)),
+    url("images/leaves.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Style the buttons below here */
 
-
-
 /* Style the cards below here */
 
-.back-card{
-    background-color: #b83939;
+.back-card {
+  background-color: #b83939;
+  background-image: url(images/card-background.png);
+  background-size: cover;
+  background-position: center;
 }
 
-.card-front{
-    background-color: #ffffff;
+.card-front {
+  background-color: #ffffff;
 }
 
 .back-card,
-.card-front{
-    width: 12rem;
-    min-width: 128px;
-    margin: 1rem;
-    height: 16rem;
-    border-radius: 1rem;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+.card-front {
+  width: 12rem;
+  min-width: 128px;
+  margin: 1rem;
+  height: 16rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 
 .card-front p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    color: #ae4040;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #ae4040;
+  position: relative;
 }
 
 .number-container {
-    font-size: 8rem;
-    position: absolute;
-    bottom: 0.5rem;
-    right: 3rem;
+  font-size: 8rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 3rem;
 }
 
 .suit-container {
-    font-size: 5rem;
-    position: absolute;
-    bottom: 0.5rem;
-    left: 1rem;
+  font-size: 5rem;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
 }
 
 @media (max-width: 480px) {
-    .back-card,
-    .card-front {
-        width: 8rem;
-        height: 12rem;
-    }
+  .back-card,
+  .card-front {
+    width: 8rem;
+    height: 12rem;
+  }
 
-    .number-container {
-        font-size: 6rem;
-        bottom: 0.2rem;
-        right: 1.5rem;
-    }
+  .number-container {
+    font-size: 6rem;
+    bottom: 0.2rem;
+    right: 1.5rem;
+  }
 
-    .suit-container {
-        font-size: 3rem;
-        bottom: 0.2rem;
-        left: 0.5rem;
-    }
+  .suit-container {
+    font-size: 3rem;
+    bottom: 0.2rem;
+    left: 0.5rem;
+  }
 }
