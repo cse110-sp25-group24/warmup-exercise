@@ -5,6 +5,9 @@ section, header {
     justify-content: center;
 }
 
+@import url(https://fonts.google.com/specimen/DM+Sans);
+
+
 body {
     background: linear-gradient( rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.9) ), url('images/leaves.jpg');
     background-position: center;
@@ -12,7 +15,11 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold; 
 }
+
+
 
 /* Style the buttons below here */
 
