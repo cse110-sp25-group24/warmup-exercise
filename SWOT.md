@@ -5,7 +5,7 @@
 - **Team Name**: BeeZee24/7
 - **Team Number**: 24
 - **GitHub Repository**: [https://github.com/cse110-sp25-group24/warmup-exercise](https://github.com/cse110-sp25-group24/warmup-exercise)
-- **YouTube Demo**: [insert youtube link]
+- **YouTube Demo**: [https://youtu.be/3MxozoXoPAg](https://youtu.be/3MxozoXoPAg)
 
 ---
 
