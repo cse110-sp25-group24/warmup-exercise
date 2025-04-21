@@ -1,6 +1,7 @@
 # BeeZee 24/7 warmup-exercise
 
 Link to our SWOT: [Click here](/SWOT.md)
+Link to DEMO: [https://cse110-sp25-group24.github.io/warmup-exercise/](https://cse110-sp25-group24.github.io/warmup-exercise/)
 
 ## How to Contribute
 
