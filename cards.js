@@ -26,8 +26,18 @@ function drawCard() {
   }
 
   /* Functionality for showing what the top card is */
+  console.log(card);
   number.textContent = card[0] + card[1];
   suit.textContent = card[card.length - 1];
+
+  if (suit.textContent == "♥" || suit.textContent == "♦") {
+    number.style.color = "red";
+    suit.style.color = "red";
+  }
+  else {
+    number.style.color = "black";
+    suit.style.color = "black";
+  }
 
   return card;
 }
