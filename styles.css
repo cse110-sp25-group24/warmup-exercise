@@ -7,6 +7,12 @@ header {
 
 @import url(https://fonts.google.com/specimen/DM+Sans);
 
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 body {
     background: linear-gradient( rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.9) ), url('images/leaves.jpg');
@@ -20,10 +26,11 @@ body {
 }
 
 header {
-  border-radius: 1rem;
+  border-radius: 1vw;
   color: white;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 
 /* Style the buttons below here */
@@ -32,7 +39,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 4rem;
+  gap: 4vw;
 }
 
 .shuffle-draw-class {
@@ -41,8 +48,9 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 10rem;
-  height: 5rem;
+  width: 10vw;
+  height: 10vh;
+  min-height: 75px;
 
   /* Customizing the button properties here */
   border-radius: 0.5rem;
@@ -50,9 +58,7 @@ header {
 }
 
 .shuffle-draw-class img {
-  flex: 1 1 auto;
-  max-width: 50%;
-  height: auto;
+  height: 10vh;
 }
 
 .shuffle-draw-class:hover {
@@ -72,7 +78,7 @@ header {
 .no-card {
   background-color: #b83939;
   background-size: cover;
-  background-position: center;  
+  background-position: center;
 }
 
 .back-card {
@@ -89,11 +95,12 @@ header {
 .no-card,
 .back-card,
 .card-front {
-  width: 12rem;
-  min-width: 128px;
-  margin: 1rem;
-  height: 16rem;
-  border-radius: 1rem;
+  width: 12vw;
+  margin: 1vw;
+  height: 36vh;
+  min-height: 400px;
+  min-width: 200px;
+  border-radius: 1vw;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -107,35 +114,84 @@ header {
 }
 
 .number-container {
-  font-size: 7rem;
-  letter-spacing: -1rem;
-  position: absolute;
-  right: 3rem;
+  font-size: calc(50px + 7vw);
+  letter-spacing: -0.2em;
+  position: relative;
+  right: 2.5vw;
 }
 
 .suit-container {
-  font-size: 9rem;
-  position: absolute;
-  bottom: 2.5rem;
-  left: 2rem;
+  font-size: calc(50px + 5vw);
+  height: auto;
+  position: relative;
+  bottom: 1vw;
+  left: 1vw;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1280px) {
+  .no-card,
   .back-card,
   .card-front {
-    width: 8rem;
-    height: 12rem;
+    width: 12rem;
+    height: 18rem;
+    max-width: 200px;
+    max-height: 300px;
+    min-width: 0px;
+    min-height: 300px;
   }
 
   .number-container {
-    font-size: 6rem;
-    bottom: 0.2rem;
-    right: 1.5rem;
+    font-size: 8rem;
   }
 
   .suit-container {
-    font-size: 3rem;
-    bottom: 0.2rem;
-    left: 0.5rem;
+    font-size: 7rem;
   }
+
+  .shuffle-draw-class {
+    min-width: 150px;
+  }
+
+  .button-box {
+    gap: 1.5em;
+  }
+}
+
+/* Animation for drawing and flipping a card */
+@keyframes draw-flip-card {
+  0% {
+    transform: translateX(-10vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0vw) rotateY(0deg);
+  }
+}
+
+.animate-draw-flip {
+  animation: draw-flip-card 0.1s ease;
+  transform-origin: center;
+  perspective: 1000px;
+}
+
+/* Animation for shuffling the deck */
+@keyframes shuffle-deck {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-1vw) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(1vw) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-0.5vw) rotate(-3deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+.animate-shuffle {
+  animation: shuffle-deck 0.6s ease-in-out infinite;
 }

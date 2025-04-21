@@ -1,6 +1,7 @@
 # Warmup Exercise - Team and Technology DeRisk
 
 ## 📋 Team Info
+
 - **Team Name**: BeeZee24/7
 - **Team Number**: 24
 - **GitHub Repository**: [https://github.com/cse110-sp25-group24/warmup-exercise](https://github.com/cse110-sp25-group24/warmup-exercise)
@@ -15,6 +16,7 @@ During this warmup exercise, our team (BeeZee24/7) worked collaboratively to bui
 We successfully implemented Step 1 of the assignment: creating a styled card deck with a draw and shuffle feature. We built everything from scratch with no frameworks, which improved our understanding of vanilla JavaScript. We also created a custom layout using Flexbox and tested dynamic card updates using local SVGs. At the end of the sprint, we recorded a short demo and compiled this summary and SWOT analysis.
 
 ---
+
 ## SWOT Analysis
 
 ### Team
@@ -51,20 +53,21 @@ We successfully implemented Step 1 of the assignment: creating a styled card dec
 |-----------|------------|
 | GitHub Issues helped break down tasks clearly | Some teammates were new to branching and PRs |
 | Figma made the layout vision clear before coding | Not everyone used or referred to the Figma actively |
-| Clear team and contribution process written in the README |
+| Clear team and contribution process written in the README | |
 
 | Opportunities | Threats |
 |---------------|---------|
 | Assign Issues with clearer labels and deadlines | If PR reviews aren't enforced, code quality may suffer |
 | Sync GitHub board with standups to track progress live | Conflicts may arise if teammates commit directly to main |
 | We can reuse this structure (README + Slack + GitHub Issues) for future projects | Confusion or errors may occur if branch guidelines aren’t followed |
-| GitHub Projects or PR Templates could further improve organization | 
+| GitHub Projects or PR Templates could further improve organization | |
 
 ---
 
 ## Summary of Our Learning
 
 This exercise helped us practice breaking a project into manageable tasks and revealed how we work together as a team. We learned:
+
 - How to collaboratively build a UI using only vanilla web tech
 - The importance of syncing GitHub Issues with PRs to avoid duplication
 - The value of Figma for aligning design early
@@ -72,4 +75,3 @@ This exercise helped us practice breaking a project into manageable tasks and re
 - How to split up work effectively in a large team using Slack and GitHub
 
 We're more prepared for our final project now, and this warmup gave us the foundation for better collaboration, cleaner code, and faster team communication.
-
